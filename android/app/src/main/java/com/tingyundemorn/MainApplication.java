@@ -46,8 +46,8 @@ public class MainApplication extends Application implements ReactApplication {
     super.onCreate();
     SoLoader.init(this, /* native exopackage */ false);
     initializeFlipper(this); // Remove this line if you don't want Flipper enabled
-      String appKey="017f459cfc3a487e9bdc0264cb8ba511";
-      String tingyunHost="192.168.2.100:8081";
+      String appKey="";
+      String tingyunHost="";
       RNTingyunAppModule.startInNative(appKey,tingyunHost,true,this.getApplicationContext());
   }
 
