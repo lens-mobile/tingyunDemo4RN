@@ -2,7 +2,14 @@
   package="com.tingyundemorn">
 
     <uses-permission android:name="android.permission.INTERNET" />
-
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <!--非必要权限，用以获取 targentVersion 29 及以上 Android 10 设备的网络状态-->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <!--非必要权限，用以使用「可视化操作命名功能」-->
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
+    <uses-permission android:name="android.permission.SYSTEM_OVERLAY_WINDOW"/>
+    <!--非必要权限，用以获取当前移动网络连接的基站信息-->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
     <application
       android:name=".MainApplication"
       android:label="@string/app_name"

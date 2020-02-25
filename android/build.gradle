@@ -6,13 +6,17 @@ buildscript {
         minSdkVersion = 16
         compileSdkVersion = 28
         targetSdkVersion = 28
+        tingyun_sdk_version = '2.13.7.2'//听云SDK版本
+        tingyun_ndk_version = '1.2.1'//听云NDK版本
     }
     repositories {
         google()
         jcenter()
+        maven { url "http://nexus2.tingyun.com/nexus/content/repositories/snapshots/" }
     }
     dependencies {
         classpath("com.android.tools.build:gradle:3.4.2")
+        classpath "com.networkbench:tingyun-ea-agent-android-gradle-plugin:2.13.7.2"
 
         // NOTE: Do not place your application dependencies here; they belong
         // in the individual module build.gradle files
@@ -22,6 +26,7 @@ buildscript {
 allprojects {
     repositories {
         mavenLocal()
+        maven { url "http://nexus2.tingyun.com/nexus/content/repositories/snapshots/" }
         maven {
             // All of React Native (JS, Obj-C sources, Android binaries) is installed from npm
             url("$rootDir/../node_modules/react-native/android")
