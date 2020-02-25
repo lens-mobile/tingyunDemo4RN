@@ -1,4 +1,4 @@
-# 听云集成文档
+# ReactNative集成文档
 
 ## 1.安装听云模块
 `npm install react-native-tingyunapp --save`
