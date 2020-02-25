@@ -184,6 +184,7 @@ dependencies {
     implementation "com.facebook.react:react-native:+"  // From node_modules
     compile "com.networkbench.newlens.agent.android:nbs.newlens.nativecrash:1.2.1"
     compile project(':react-native-tingyunapp')
+    implementation files('../../node_modules/react-native-tingyunapp/android/libs/tingyun-ea-agent-android.jar')
 
     if (enableHermes) {
         def hermesPath = "../../node_modules/hermes-engine/android/";
