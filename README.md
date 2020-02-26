@@ -48,3 +48,4 @@ dependencies {
 ## 5.调用接口
 参考[App.js](https://github.com/lens-mobile/tingyunDemo4RN/blob/master/App.js)
 
+*注：reportError接口参数不能为null*
