@@ -8,7 +8,7 @@ import com.facebook.react.ReactNativeHost;
 import com.facebook.react.ReactPackage;
 import com.facebook.soloader.SoLoader;
 import com.reactlibrary.RNTingyunAppModule;
-import com.networkbench.agent.impl.NBSAppAgent;
+//import com.networkbench.agent.impl.NBSAppAgent;
 
 import java.lang.reflect.InvocationTargetException;
 import java.util.List;
@@ -47,10 +47,10 @@ public class MainApplication extends Application implements ReactApplication {
     super.onCreate();
     SoLoader.init(this, /* native exopackage */ false);
     initializeFlipper(this); // Remove this line if you don't want Flipper enabled
-      String appKey="017f459cfc3a487e9bdc0264cb8ba511";
-      String tingyunHost="192.168.2.100:8081";
+      String appKey="";
+      String tingyunHost="192.168.1.3:8091";
       RNTingyunAppModule.startInNative(appKey,tingyunHost,true,this.getApplicationContext());
-      NBSAppAgent.setUserIdentifier("1234");
+      //NBSAppAgent.setUserIdentifier("1234");
   }
 
   /**

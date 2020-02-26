@@ -26,7 +26,6 @@ apply plugin:'newlens'
 
 dependencies {
       compile "com.networkbench.newlens.agent.android:nbs.newlens.nativecrash:1.2.1"
-compile project(':react-native-tingyunapp')
 }
 ```
 ## 3.配置权限
@@ -48,3 +47,4 @@ compile project(':react-native-tingyunapp')
 参考[MainApplication.java](https://github.com/lens-mobile/tingyunDemo4RN/blob/master/android/app/src/main/java/com/tingyundemorn/MainApplication.java)
 ## 5.调用接口
 参考[App.js](https://github.com/lens-mobile/tingyunDemo4RN/blob/master/App.js)
+
